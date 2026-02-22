@@ -10,10 +10,10 @@
 
 </head>
 
-<body class="w-[80%] mx-auto">
-    <header>
+<body class="w-[80%] mx-auto bg-[#F8FAFC]">
+    <header >
         <h1 class="text-6xl font-semibold text-[#002C5C] mt-20">Job Application Tracker</h1>
-        <div class="grid grid-cols-3 gap-5 mt-15">
+        <div class="grid  lg:grid-cols-3 gap-5 mt-15">
             <div class=" bg-white shadow-xl rounded-xl px-3 py-6">
                 <p id="total" class=" font-medium text-gray-600">Total</p>
                 <p id="totalCount" class="font-bold text-3xl">0</p>
@@ -27,24 +27,28 @@
                 <p id="totalCount" class="font-bold text-3xl text-red-600">0</p>
             </div>
     </header>
-    <hr class="mt-10 mb-10">
+    <hr class="mt-10 mb-10 opacity-10">
 
 
-    <main>
-        <p class="text-2xl font-medium mb-8  text-[#002C5C]">Available Jobs</p>
+    <mai >
+       <div class="flex justify-between">
+         <p class="text-2xl font-medium mb-8  text-[#002C5C]">Available Jobs</p>
+         <p class="text-[#64748B]">0 jobs</p>
+       </div>
         <div class="space-x-1">
             <button class="shadow bg-blue-500 text-white px-3 py-1 rounded  ">All</button>
             <button class="shadow px-3 py-1 rounded text-[#64748B]">Interview</button>
             <button class="shadow px-3 py-1 rounded text-[#64748B]">Rejected</button>
         </div>
 
-        <div class="mt-5">
-            <div class="flex justify-between border p-5 ">
+        <div class="mt-10 gap-4 ">
+
+            <div class="flex justify-between  shadow mb-5  p-5 ">
                 <div class="space-y-3">
                     <h3 class="text-xl font-medium text-[#002C5C]">TechNova Agency</h3>
                     <p class="text-[#64748B]">Web Design & Development</p>
                     <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C] ">NOT APPLIED</p>
                     <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
                         Must have strong UI/UX sense and portfolio projects.</p>
                     <div>
@@ -58,14 +62,14 @@
                 </div>
             </div>
             <!-- card-2 -->
-            <div class="flex justify-between border p-5 ">
+            <div class="flex justify-between   shadow mb-5 p-5 ">
                 <div class="space-y-3">
                     <h3 class="text-xl font-medium text-[#002C5C]">CodeSphere Ltd.</h3>
-                    <p class="text-[#64748B]">Web Design & Development</p>
-                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
-                    <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
-                        Must have strong UI/UX sense and portfolio projects.</p>
+                    <p class="text-[#64748B]">Product Design</p>
+                    <p class="text-[#64748B]">Remote • Part-time • $30,000 - $45,000</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C]">NOT APPLIED</p>
+                    <p class="text-[#64748B]">Design modern app interfaces and wireframes using Figma. Portfolio
+                        required.</p>
                     <div>
                         <button
                             class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
@@ -77,16 +81,18 @@
                 </div>
             </div>
             <!-- 3 -->
-              <div class="flex justify-between border p-5 ">
+            <div class="flex justify-between shadow mb-5 p-5 ">
                 <div class="space-y-3">
-                    <h3 class="text-xl font-medium text-[#002C5C]">TechNova Agency</h3>
-                    <p class="text-[#64748B]">Web Design & Development</p>
-                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
-                    <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
-                        Must have strong UI/UX sense and portfolio projects.</p>
+                    <h3 class="text-xl font-medium text-[#002C5C]">WordPress Developer</h3>
+                    <p class="text-[#64748B]">Web Development</p>
+                    <p class="text-[#64748B]">Sylhet, Bangladesh • Contract • $25,000 - $35,000</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C]">NOT APPLIED</p>
+                    <p class="text-[#64748B]">Customize WordPress themes and plugins. Elementor experience
+                        preferred.
+                    </p>
                     <div>
-                        <button class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
+                        <button
+                            class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
                         <button class="shadow border border-red-500 px-3 py-1 rounded text-red-500">Rejected</button>
                     </div>
                 </div>
@@ -95,16 +101,17 @@
                 </div>
             </div>
             <!-- 4 -->
-              <div class="flex justify-between border p-5 ">
+            <div class="flex justify-between shadow mb-5  p-5 ">
                 <div class="space-y-3">
-                    <h3 class="text-xl font-medium text-[#002C5C]">TechNova Agency</h3>
-                    <p class="text-[#64748B]">Web Design & Development</p>
-                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
-                    <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
-                        Must have strong UI/UX sense and portfolio projects.</p>
+                    <h3 class="text-xl font-medium text-[#002C5C]">NexGenix Marketing</h3>
+                    <p class="text-[#64748B]">Digital Marketing</p>
+                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $35,000 – $50,000</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C]">NOT APPLIED</p>
+                    <p class="text-[#64748B]">Manage SEO campaigns, social media ads, and Google Analytics reports.
+                    </p>
                     <div>
-                        <button class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
+                        <button
+                            class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
                         <button class="shadow border border-red-500 px-3 py-1 rounded text-red-500">Rejected</button>
                     </div>
                 </div>
@@ -113,16 +120,17 @@
                 </div>
             </div>
             <!-- 5 -->
-              <div class="flex justify-between border p-5 ">
+            <div class="flex justify-between shadow mb-5 p-5 ">
                 <div class="space-y-3">
-                    <h3 class="text-xl font-medium text-[#002C5C]">TechNova Agency</h3>
-                    <p class="text-[#64748B]">Web Design & Development</p>
-                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
-                    <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
-                        Must have strong UI/UX sense and portfolio projects.</p>
+                    <h3 class="text-xl font-medium text-[#002C5C]">DevMatrix</h3>
+                    <p class="text-[#64748B]">Full Stack Development</p>
+                    <p class="text-[#64748B]">Remote • Full-time • $60,000 - $85,000</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C]">NOT APPLIED</p>
+                    <p class="text-[#64748B]">Build scalable web applications using MongoDB, Express, React, and
+                        Node.js.</p>
                     <div>
-                        <button class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
+                        <button
+                            class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
                         <button class="shadow border border-red-500 px-3 py-1 rounded text-red-500">Rejected</button>
                     </div>
                 </div>
@@ -131,16 +139,17 @@
                 </div>
             </div>
             <!-- 6 -->
-              <div class="flex justify-between border p-5 ">
+            <div class="flex justify-between  shadow mb-5 p-5 ">
                 <div class="space-y-3">
-                    <h3 class="text-xl font-medium text-[#002C5C]">TechNova Agency</h3>
-                    <p class="text-[#64748B]">Web Design & Development</p>
-                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
-                    <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
-                        Must have strong UI/UX sense and portfolio projects.</p>
+                    <h3 class="text-xl font-medium text-[#002C5C]">AppVision Tech</h3>
+                    <p class="text-[#64748B]">App Development</p>
+                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $55,000 – $75,000</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C]">NOT APPLIED</p>
+                    <p class="text-[#64748B]">Develop Android applications using Kotlin. Experience with Firebase
+                        required.</p>
                     <div>
-                        <button class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
+                        <button
+                            class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
                         <button class="shadow border border-red-500 px-3 py-1 rounded text-red-500">Rejected</button>
                     </div>
                 </div>
@@ -149,16 +158,19 @@
                 </div>
             </div>
             <!-- 7 -->
-              <div class="flex justify-between border p-5 ">
+            <div class="flex justify-between shadow mb-5 p-5 ">
                 <div class="space-y-3">
-                    <h3 class="text-xl font-medium text-[#002C5C]">TechNova Agency</h3>
-                    <p class="text-[#64748B]">Web Design & Development</p>
-                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
-                    <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
-                        Must have strong UI/UX sense and portfolio projects.</p>
+                    <h3 class="text-xl font-medium text-[#002C5C]">Creative Hub</h3>
+                    <p class="text-[#64748B]">Visual Design</p>
+                    <p class="text-[#64748B]">Khulna, Bangladesh • Part-time • $20,000 – $30,000
+
+                        NOT APPLIED</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C]">NOT APPLIED</p>
+                    <p class="text-[#64748B]">Create branding materials, banners, and social media creatives. Adobe
+                        Suite required.</p>
                     <div>
-                        <button class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
+                        <button
+                            class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
                         <button class="shadow border border-red-500 px-3 py-1 rounded text-red-500">Rejected</button>
                     </div>
                 </div>
@@ -167,16 +179,17 @@
                 </div>
             </div>
             <!-- 8 -->
-              <div class="flex justify-between border p-5 ">
+            <div class="flex justify-between shadow mb-5  p-5 ">
                 <div class="space-y-3">
-                    <h3 class="text-xl font-medium text-[#002C5C]">TechNova Agency</h3>
-                    <p class="text-[#64748B]">Web Design & Development</p>
-                    <p class="text-[#64748B]">Dhaka, Bangladesh • Full-time • $40,000 - $55,000</p>
-                    <p class="bg-blue-300 w-[100px] text-center">APPLIED</p>
-                    <p class="text-[#64748B]">Build responsive websites using React and Tailwind CSS.
-                        Must have strong UI/UX sense and portfolio projects.</p>
+                    <h3 class="text-xl font-medium text-[#002C5C]">SoftSecure Ltd.</h3>
+                    <p class="text-[#64748B]">Quality Assurance</p>
+                    <p class="text-[#64748B]">Remote • Full-time • $45,000 – $65,000</p>
+                    <p class="bg-[#d2ddf3] w-[150px] rounded text-center text-[#002C5C]">NOT APPLIED</p>
+                    <p class="text-[#64748B]">Perform manual and automated testing. Knowledge of Selenium is a plus.
+                    </p>
                     <div>
-                        <button class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
+                        <button
+                            class="shadow border border-green-500 px-3 py-1 rounded text-green-400">Interview</button>
                         <button class="shadow border border-red-500 px-3 py-1 rounded text-red-500">Rejected</button>
                     </div>
                 </div>
@@ -184,6 +197,7 @@
                     <button>Delete</button>
                 </div>
             </div>
+
         </div>
     </main>
 
