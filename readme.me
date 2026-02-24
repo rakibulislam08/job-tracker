@@ -1,0 +1,23 @@
+1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+ans: "getElementById()" হলো একটি ইউনিক ইডি যা পুরো HTML ফাইলে  একটী এই থাকে, 
+getElementsByClassName() হলো html collection একসাথে মাল্টিপল ক্লাসে কাজ করা যায়,
+querySelector() এইটা ক্লাস নেইমের সাথে যে ক্লাস টা আগে ম্যাচ করবে অইটাকে নিবে,
+querySelectorAll() এইটা আর getElementsByClassName সেম শুধু একটা html collection দেয় আরেকটা nodelist দেয়
+
+2. How do you create and insert a new element into the DOM?
+
+>>Create element
+const  p = document.createElement("p");
+>>Add content or attributes
+p.innerText = 'hello i,m hero'
+>>Insert into DOM
+(clasName).appendchild(p)
+
+3. What is Event Bubbling? And how does it work?
+4. What is Event Delegation in JavaScript? Why is it useful?
+একটী ফাংশনে event delegation use করে একাধিক কাজ ১ ক্লিকে করা যায়,
+usefulঃ faster work ,better performance
+
+5. What is the difference between preventDefault() and stopPropagation() methods? 
+preventDefault() browser action off করে দেয় আর dom অনুক্রমে চলতে থাকে 
+stopPropagation() DOM এর ট্রি তে বাধা দেয়
