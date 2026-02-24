@@ -1,3 +1,5 @@
+
+
 let total = document.getElementById('totalCount');
 let totalInterview = document.getElementById('totalInterview');
 let totalRejected = document.getElementById('totalRejected');
@@ -12,15 +14,19 @@ let currentStatus = 'all'
 
 const allCards = document.getElementById('all-cards')
 const mainContainer = document.querySelector('main')
+const interviewSection = document.getElementById('interview-section');
 
 
 function TotalCountNumber() {
     total.innerText = allCards.children.length;
     totalInterview.innerText = interviewList.length
     totalRejected.innerText = rejectedList.length
+    updateJobsCounts();
 
 
 }
+/*  */
+
 
 
 
@@ -55,15 +61,32 @@ function toggleBtn(id) {
         allCards.classList.add('hidden')
         interviewSection.classList.remove("hidden")
         renderingRejected()
+        updateJobsCounts()
     }
+
+}
+// count 
+const jobCounts = document.getElementById('jobs-count');
+
+function updateJobsCounts() {
+
+    if (currentStatus === "allBtn") {
+        jobCounts.innerText = allCards.children.length + " Jobs";
+    }
+
+    else if (currentStatus === "interviewBtn") {
+        jobCounts.innerText = interviewList.length + " Jobs";
+    }
+
+    else if (currentStatus === "rejectedBtn") {
+        jobCounts.innerText = rejectedList.length + " Jobs";
+    }
+
 
 }
 
 
-
 mainContainer.addEventListener('click', function (e) {
-    // console.log(e.target.classList.contains('interview-btn-click'));
-    // console.log(e.target.classList.contains('rejected-btn-click'));
 
     if (e.target.classList.contains('interview-btn-click')) {
         const parentNodes = e.target.parentNode.parentNode;
@@ -121,7 +144,7 @@ mainContainer.addEventListener('click', function (e) {
             rejectedList.push(allInfo)
         }
         interviewList = interviewList.filter(item => item.companyName != allInfo.companyName)
-        if(currentStatus == 'interviewBtn'){
+        if (currentStatus == 'interviewBtn') {
             renderingInterview();
             // renderingRejected()
         }
@@ -135,18 +158,15 @@ mainContainer.addEventListener('click', function (e) {
 
 
 /*  */
-const interviewSection = document.getElementById('interview-section');
-// const rejectedSection = document.getElementById("rejected-section")
+
 
 function renderingInterview() {
     interviewSection.innerHTML = ''
-
     for (let inter of interviewList) {
 
         let div = document.createElement('div')
+
         div.className = `class="flex justify-between  shadow mb-5  p-5 "`
-
-
         div.innerHTML = `
         <div class="space-y-3">
                         <h3 class="company-title text-xl font-medium text-[#002C5C]">${inter.companyName}</h3>
@@ -164,6 +184,8 @@ function renderingInterview() {
         interviewSection.appendChild(div)
     }
 }
+
+
 /*  */
 function renderingRejected() {
     interviewSection.innerHTML = ''
